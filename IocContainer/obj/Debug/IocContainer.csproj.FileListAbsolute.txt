@@ -1,1 +1,6 @@
 D:\Visual Studio Projects\IocContainer\IocContainer\bin\Debug\IocContainer.exe.config
+D:\Visual Studio Projects\IocContainer\IocContainer\obj\Debug\IocContainer.csprojResolveAssemblyReference.cache
+D:\Visual Studio Projects\IocContainer\IocContainer\bin\Debug\IocContainer.exe
+D:\Visual Studio Projects\IocContainer\IocContainer\bin\Debug\IocContainer.pdb
+D:\Visual Studio Projects\IocContainer\IocContainer\obj\Debug\IocContainer.exe
+D:\Visual Studio Projects\IocContainer\IocContainer\obj\Debug\IocContainer.pdb

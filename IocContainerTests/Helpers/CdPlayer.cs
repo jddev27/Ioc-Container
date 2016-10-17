@@ -4,16 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IocContainer
+namespace IocContainerTests.Helpers
 {
-    class Program
+    class CdPlayer : ICdPlayer
     {
-        static void Main(string[] args)
+        public void playingCd()
         {
-            
-
-        
-
+            Console.WriteLine("I'm playing cds");
         }
     }
 }

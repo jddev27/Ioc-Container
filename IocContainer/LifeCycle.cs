@@ -6,14 +6,9 @@ using System.Threading.Tasks;
 
 namespace IocContainer
 {
-    class Program
+    public enum LifeCycle
     {
-        static void Main(string[] args)
-        {
-            
-
-        
-
-        }
+        Transient,
+        Singleton
     }
 }

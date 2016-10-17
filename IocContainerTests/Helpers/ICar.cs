@@ -4,16 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IocContainer
+namespace IocContainerTests.Helpers
 {
-    class Program
+    interface ICar
     {
-        static void Main(string[] args)
-        {
-            
-
-        
-
-        }
+        void print();
     }
 }
