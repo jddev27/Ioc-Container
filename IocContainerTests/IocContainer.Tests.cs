@@ -11,6 +11,7 @@ namespace IocContainerTests
 {
     public class IocContainerTests
     {
+        //Testing for Registration and resolving methods
         [Fact]
         public void IoC_CallRegisterAndResolve_ObjectWasRegistered()
         {
@@ -26,6 +27,7 @@ namespace IocContainerTests
             Assert.IsType(car.GetType(), actual);
         }
 
+        //Testing resolving types with transient lifecycle
         [Fact]
         public void Ioc_TransientLifeCycle_ResolvedObjecHasDifferentHashCode()
         {
@@ -42,6 +44,7 @@ namespace IocContainerTests
             Assert.NotEqual(actual1.GetHashCode(), actual2.GetHashCode());
         }
 
+        //Testing resolving types with singleton lifecycle
         [Fact]
         public void Ioc_SingletonLifeCycle_ResolvedObjecHasSameHashCode()
         {
@@ -58,6 +61,7 @@ namespace IocContainerTests
             Assert.Equal(actual1.GetHashCode(), actual2.GetHashCode());
         }
 
+        //Testing for non-registered objects
         [Fact]
         public void Ioc_ObjectNotRegisters_ThrowExecption()
         {
@@ -71,6 +75,7 @@ namespace IocContainerTests
            Assert.Throws<InterfaceNotRegisteredException>(() => container.Resolve<ICar>());
         }
 
+        //Testing resolving Types with arguments that are registered types
         [Fact]
         public void Ioc_ResolvingRegisteredObjectsWithRegisteredObjectConstructors_ObjectWasResolve()
         {
@@ -84,13 +89,8 @@ namespace IocContainerTests
             container.Register<ICdPlayer, CdPlayer>();
             container.Register<ISoundSystem, SoundSystem>();
 
-
-
-
             //act
-            
             var actual = container.Resolve<ISoundSystem>();
-
 
             //assert
             Assert.IsType(onkio.GetType(), actual);

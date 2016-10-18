@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DuplicateImplementationException.cs" />
     <Compile Include="InterfaceNotRegisteredException.cs" />
     <Compile Include="Ioc.cs" />
     <Compile Include="LifeCycle.cs" />
